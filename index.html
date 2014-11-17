@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<head>
+<link href="bootstrap.min.css" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="jumbotron">
+  <div class="container">
+  <h1>Resin synchronus Speakers</h1>
+  <p>Stream spotify to all your resin connected devices (2 hour build).</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="page-header">
+  <h1>Notes <small>Lets get a few things straight</small></h1>
+  </div>
+  <div class="row">
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </row>
+  <div class="page-header">
+  <h1>Step 1 <small>Get your download and install application image.</small></h1>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+     <iframe id="player1" src="//player.vimeo.com/video/76979871?api=1&player_id=player1" width="100%" height="354" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div> <!-- half -->
+    <div class="col-md-6 well">
+      <div class="copied">
+          <div class="inner">
+              <h4>Copied!</h4>
+              <span class="glyphicon glyphicon-pushpin"></span>
+          </div>
+      </div>
+      <div class="skip" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </div>
+      <div class="window editor fading">
+        <div class="header">
+              <span class="bullet bullet-red"></span><span class="bullet bullet-yellow"></span><span class="bullet bullet-green"></span><span class="title">~/Projects/index.js</span>
+        </div>
+        <div class="body">
+            <ol class="code code-block active"  data-title="~/Projects/resin/index.js">
+              <li><span class="code"><span class="v">var</span> request = require('request')</span>;</span></li>
+              <li><span class="code"><span class="v">var</span> Lame = require('lame');</span></li>
+              <li><span class="code"><span class="v">var</span> Speaker = require('speaker');</span></li>
+              <li><span class="code"><span class="v">var</span> text = <span class="string">'Say hello to my little friend';</b></span></li>
+              <li><span class="code"><span class="v">var</span> url = 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(text);</span></li>
+              <li><span class="code">request(url).<span class="fn">pipe</span>(new Lame.Decoder).<span class="fn">pipe</span>(new Speaker);</span></li>
+            </ol>
+
+            <ol class="code code-block" data-time="4.732" data-title="~/Projects/resin/">
+              <li><span class="code"><span class="fn">git:(master) </span>push resin master</span></span></li>
+            </ol>
+
+            <ol class="code code-block"  data-time="7.732"  data-title="~/Projects/resin/index.js">
+              <li><span class="code"><span class="v">var</span> request = require('request')</span>;</span></li>
+              <li><span class="code"><span class="v">var</span> Lame = require('lame');</span></li>
+              <li><span class="code"><span class="v">var</span> Speaker = require('speaker');</span></li>
+              <li><span class="code"><span class="v">var</span> text = <span class="string">'Say hello to my little friend';</b></span></li>
+              <li><span class="code"><span class="v">var</span> url = 'http://translate.google.com/translate_tts?tl=en&q=' + encodeURIComponent(text);</span></li>
+              <li><span class="code">request(url).<span class="fn">pipe</span>(new Lame.Decoder).<span class="fn">pipe</span>(new Speaker);</span></li>
+            </ol>
+            <div class="notes code">
+            //NOTES//</br>
+            //This is insructions notes for each codesnippet goes.
+            </div>
+
+          </div>
+      </div>
+
+      <p>Status: <span class="status">&hellip;</span></p>
+    </div> <!-- half -->
+  </div> <!-- row -->
+</div> <!-- container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/underscore-min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script src="js/fun.js"></script>
+<script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
+</body>
+</html>
